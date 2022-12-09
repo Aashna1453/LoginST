@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>UPDATE</h1>
+    <a class="nav-link" href="/reset?id=<%= results[0].id %>"
+      >RESET PASSWORD</a
+    >
+    <br>
+    <h1>USER PROFILE</h1>
+    <table border="2" class="table">
+      <tr>
+        <th>ID</th>
+        <th>USERNAME</th>
+        <th>NAME</th>
+        <th>GENDER</th>
+        <th>PHONE NUMBER</th>
+        
+        
+    </tr>
+      <tr>
+        <td><%= results[0].id %></td>
+        <td><%= results[0].username %></td>
+        <td><%= results[0].fname %></td>
+        <td><%= results[0].gender %></td>
+        <td><%= results[0].pno %></td>      
+    </tr>
+    </table>
+  </body>
+</html>
